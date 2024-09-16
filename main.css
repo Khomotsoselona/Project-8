@@ -1,28 +1,74 @@
 body {
-  background-color: red;
   display: grid;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
 main {
-  background-color: aqua;
   display: grid;
-  grid-template-columns: 132px 350px 250px;
-  width: calc(132px + 350px + 250px + 70px);
+  width: 812px;
+  display: grid;
+  grid-template-columns: 130px 360px 260px;
   column-gap: 35px;
-  width: 802px;
 }
 
 .logo {
-  background-color: orange;
-  margin-top: 222px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.fota {
-  background-color: yellow
+.right {
+  display: flex;
+  flex-direction: column;
 }
 
-.content {
-  background-color: green;
+h1,
+#quote1,
+.author,
+.footer {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  position: relative;
+  top: 17vh;
+  font-family: Goudy Old Style, Garamond, Times New Roman, serif;
+  opacity: 0.3;
+}
+
+article {
+  flex-grow: 1;
+}
+
+#quote {
+  position: relative;
+  top: 18vh;
+  font-family: Baskerville, Roman, serif;
+  font-size: 20px;
+}
+
+.author {
+  position: relative;
+  top: 19vh;
+  font-family: Perpetua, regular;
+  opacity: 0.2;
+}
+
+.year {
+  position: relative;
+  top: 18vh;
+  font-family: Perpetua, regular;
+  opacity: 0.2;
+}
+
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.1;
+}
+
+main div.logo {
+  border-right: 1px dotted #cccccc;
 }
